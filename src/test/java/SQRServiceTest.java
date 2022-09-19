@@ -14,6 +14,7 @@ public class SQRServiceTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
     public void testShortFrame() {
         SQRService service = new SQRService();
@@ -22,19 +23,13 @@ public class SQRServiceTest {
         Assertions.assertEquals(expected, actual);
     }
 
-        @Test
-        public void testZeroFrame() {
-            SQRService service = new SQRService();
-            int expected = 0;
-            int actual = service.calcSqrt(90, 90);
-            Assertions.assertEquals(expected, actual);
-        }
     @Test
-    public void testWrong() {
+    public void testZeroFrame() {
         SQRService service = new SQRService();
-        int expected = 1;
+        int expected = 0;
         int actual = service.calcSqrt(90, 90);
         Assertions.assertEquals(expected, actual);
+
 
     }
 }

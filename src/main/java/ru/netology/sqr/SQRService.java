@@ -11,11 +11,11 @@ public class SQRService {
             if ((i * i >= min) && (i * i <= max)) {
                 amount++;
             }
-            }
+        }
         return amount;
     }
 
-    }
+}
 
 
 
